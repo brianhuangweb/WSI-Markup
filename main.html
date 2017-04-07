@@ -1,0 +1,171 @@
+<!-- Created by Brian Huang -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brian's Markup Challenge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+
+    <!-- Navbar and jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <img class="center-block" src="assets/logo.png">
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container-fluid">
+            <ul class="ws-nav">
+                <li>COOKWARE</li>
+                <li>COOKS' TOOLS</li>
+                <li>CUTLERY</li>
+                <li>ELECTRICS</li>
+                <li>BAKEWARE</li>
+                <li>FOOD</li>
+                <li>TABLETOP & BAR</li>
+                <li>HOMEKEEPING</li>
+                <li>OUTDOOR</li>
+                <li>SALE</li>
+                <li id="ws-home">WILLIAMS-SONAMA HOME</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col-sm-7 product-nav">
+            <span class="small-font">Home ></span>
+            <span class="small-font">Homekeeping ></span>
+            <span class="small-font">Aprons ></span>
+            <span class="small-font">Adult Aprons ></span>
+            <span class="small-font" id="product">Williams-Sonama Classics Apron, <span class="color-dynamic">French Blue</span></span>
+        </div>
+    </div>
+
+    <div class="row info-block">
+        <div class="col-sm-7">
+            <img class="center-block" id="img-lg" src="assets/product-large-a.jpg">
+            <div class="center-block images-small">
+                <img class="img-sm" id="a-small" src="assets/product-small-a.jpg">
+                <img class="img-sm" id="b-small" src="assets/product-small-b.jpg">
+                <img class="img-sm" id="c-small" src="assets/product-small-c.jpg">
+                <img class="img-sm" id="d-small" src="assets/product-small-d.jpg">
+            </div>
+        </div>
+
+        <!-- Side info block -->
+        <div class="col-sm-5 side-block">
+
+            <h4 class="product-intro">Williams-Sonama Classics Apron, <span class="color-dynamic">
+                French Blue</span></h4>
+            <div class="small-font">
+                <p>
+                    A generously sized apron is a nessity in any kitchen,
+                    and ours will brighten yours with lively color
+                    Sewn of thick cotton, it can be personalized or monogrammed with up to nine characters,
+                    all the same height,
+                    embroidered in your choice of color. An apron of this quality makes a welcome gift for any cook.
+                </p>
+                <ul>
+                    <li>Durable 100% cotton construction.</li>
+                    <li>Adjustable neckband ensures a good fit.</li>
+                    <li>Roomy front pockets hold small tools.</li>
+                    <li>Machine-wash</li>
+                </ul>
+            </div>
+
+            <h4>$19.95</h4>
+
+            <select class="form-control ws-select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+
+            <!-- Shop button that triggers a modal -->
+            <button type="button" class="shop-btn" data-toggle="modal" data-target="#shop-modal">
+                <img src="assets/button-add-to-cart.png">
+            </button>
+
+            <!-- Modal -->
+            <div id="shop-modal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-sm">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Thank you!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>An item has been dded to your cart!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Continue Shopping</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="info-additional">
+                <div class="info-section bottom-line">
+                        <span href="#info-section" id="info-tag" data-toggle="collapse" data-target="#info-txt">
+                            <span class="glyphicon glyphicon-triangle-right"></span><span>Collapsed</span>
+                        </span>
+                    <div id="info-txt" class="collapse">
+                            This section is expanded. This section can be collapsed by clicking
+                            on the "Expanded" text. This section is expanded. This section can be
+                            collapsed by clicking on the "Expanded" text.
+                    </div>
+                </div>
+                <div class="info-section bottom-line">
+                        <span href="#info-section2" id="info-tag2" data-toggle="collapse" data-target="#info-txt2">
+                            <span class="glyphicon glyphicon-triangle-right"></span><span>Collapsed</span>
+                        </span>
+                    <div id="info-txt2" class="collapse">
+                        This section is expanded. This section can be collapsed by clicking
+                        on the "Expanded" text. This section is expanded. This section can be
+                        collapsed by clicking on the "Expanded" text.
+                    </div>
+                </div>
+                <div  class="info-section">
+                        <span href="#info-section3" id="info-tag3" data-toggle="collapse" data-target="#info-txt3">
+                            <span class="glyphicon glyphicon-triangle-right"></span><span>Collapsed</span>
+                        </span>
+                    <div id="info-txt3" class="collapse">
+                        This section is expanded. This section can be collapsed by clicking
+                        on the "Expanded" text. This section is expanded. This section can be
+                        collapsed by clicking on the "Expanded" text.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+                <span>&#169 </span><span>2016 Williams-Sonoma Inc., All Rights Reserved | Terms and Conditions
+                <span><a id="url-policy">(Updated March 2016)</a></span> | Privacy Policy | Legal Statement
+                </span>
+        </div>
+    </footer>
+</body>
+</html>
